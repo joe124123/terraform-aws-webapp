@@ -16,10 +16,10 @@ jobs:
             ls -ltra
             cat main.tf
 
-        - name: Generate ASCII Artwork
-          run: |
-            apt-get install cowsay -y
-            cowsay -f dragon "run for a dragon" >> dragon.txt 
+        # - name: Generate ASCII Artwork
+        #   run: |
+        #     apt-get install cowsay -y
+        #     cowsay -f dragon "run for a dragon" >> dragon.txt 
 
         # - name: List files available in this repo
         #   run: ls
