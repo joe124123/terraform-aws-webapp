@@ -9,7 +9,7 @@ jobs:
         steps:
         - name: Generate ASCII Artwork
           run: |
-            apt-get install cowsay -y
+            sudo apt-get install cowsay -y
             cowsay -f dragon "run for a dragon" >> dragon.txt 
             grep -i "dragon" dragon.txt
             cat dragon.txt
