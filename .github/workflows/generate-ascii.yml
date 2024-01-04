@@ -8,10 +8,14 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: Checkout Repo
-          uses: actions/checkout@v4.1.1    
+          uses: actions/checkout@v4.1.1  
+          
+        - name: list
+          run: ls -ltra
+          
         - name: executing  shell script
           run: |
-            chmod +x ascii-script.sh
+            chmod +x  ascii-script.sh
             ./ascii-script.sh
         # - name: Generate ASCII Artwork
         #   run: |
