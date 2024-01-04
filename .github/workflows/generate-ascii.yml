@@ -7,10 +7,12 @@ jobs:
     ascii_job:
         runs-on: ubuntu-latest
         steps:
-        - name: Generate ASCII Artwork
-          run: |
-            sudo apt-get install cowsay -y
-            cowsay -f dragon "run for a dragon" >> dragon.txt 
-            grep -i "dragon" dragon.txt
-            cat dragon.txt
-            ls -lrat
+          - name: executing  shell script
+            run: ./ascii-script.sh
+        # - name: Generate ASCII Artwork
+        #   run: |
+        #     sudo apt-get install cowsay -y
+        #     cowsay -f dragon "run for a dragon" >> dragon.txt 
+        #     grep -i "dragon" dragon.txt
+        #     cat dragon.txt
+        #     ls -lrat
