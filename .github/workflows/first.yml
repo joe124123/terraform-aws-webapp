@@ -6,6 +6,9 @@ jobs:
     first_job: 
         runs-on: ubuntu-latest
         steps:
+        - name: Checkout Repo
+          uses: actions/checkout@v4.1.1
+
         - name: Welcome message
           run: echo "My First Github action"
 
@@ -14,4 +17,3 @@ jobs:
 
         - name: Read the files of this repo
           run: cat main.tf
-          
